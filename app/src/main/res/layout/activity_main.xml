@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:id="@+id/iv_desain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar"
+        android:layout_alignParentTop="true"
+        />
+    
+    <TextView
+        android:id="@+id/tv_SelamatDatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang!!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_desain1"
+        />
+    
+    <ImageView
+        android:id="@+id/iv_DesainLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_SelamatDatang"
+        />
+    
+    <LinearLayout
+        android:id="@+id/ly_login1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_below="@id/iv_DesainLogin">
+        
+        <EditText
+            android:id="@+id/EmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:text="Email"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:id="@+id/PasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Kata Saindi"
+            android:fontFamily="@font/poppinsregular"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_LupaKataSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Kata Sandi?"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/SecondaryColor"
+        android:textSize="15sp"
+        android:layout_below="@id/ly_login1"
+        />
+    
+    <Button
+        android:id="@+id/btn_Masuk"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/tv_LupaKataSandi"
+        />
+    
+    <LinearLayout
+        android:id="@+id/ly_login2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_Masuk">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun?"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_Daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/SecondaryColor"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_desain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_SilahkanMendaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Mendaftar!!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_desain1"
+        />
+
+    <ImageView
+        android:id="@+id/iv_desainRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_SilahkanMendaftar"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/iv_desainRegister"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/EmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Email"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:id="@+id/PasswordEmail"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Kata Sandi"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:id="@+id/ConfirmRegister"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Ulang Kata Sandi"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/ly_Register"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly_login2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_Register">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun?"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_Masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/SecondaryColor"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</RelativeLayout>

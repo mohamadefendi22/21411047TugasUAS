@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Osman I"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_berkuasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Berkuasa 1299 - 1323"
+        android:textSize="20dp"
+        android:layout_below="@+id/tv_nama"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_kesultanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sultan Pertama Kesultanan Utsmaniyah"
+        android:textSize="20dp"
+        android:layout_below="@+id/tv_berkuasa"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/tv_kesultanan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_gambar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/osman1"/>
+
+            <TextView
+                android:id="@+id/tv_biografi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Osman I atau Osman Ghazi (Turki Otoman: عثمان غازى, Osmān Ġāzī; meninggal 1323/4[6]) adalah bapak dari Wangsa Utsmaniyah dan merupakan pemimpin pertama dari Negara Utsmaniyah, yang di masanya masih berupa kadipaten kecil. Ia mewarisi jabatan ayahnya sebagai adipati (bey) di bawah Kesultanan Seljuk. Saat kesultanan tersebut mengalami gonjang-ganjing, Osman memerdekakan diri dan memerintah kadipaten berdaulat itu sampai akhir hayatnya pada 1323 atau 1324. Sepeninggalnya, keturunannya menggunakan namanya sebagai nama dinasti dan negaranya (nama dinasti dan negara tersebut dieja menjadi 'Utsmani' atau 'Utsmaniyah' dalam bahasa Arab dan Indonesia dan menjadi 'Ottoman' dalam ejaan barat).
+Dikarenakan kelangkaan sumber sejarah di masanya, sangat sedikit informasi faktual yang diketahui tentangnya.[7] Tidak ada satupun sumber tertulis dari masa Osman yang tersisa. Pencatatan tentang sejarah Osman baru ditulis pada abad kelima belas masehi, atau lebih dari seabad setelah mangkatnya.[8] Dikarenakan masalah tersebut, adalah sebuah tantangan besar bagi para sejarawan untuk memisahkan antara fakta dan mitos yang berkaitan tentangnya.[9]"
+                android:layout_marginTop="20dp"
+                android:padding="30dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
