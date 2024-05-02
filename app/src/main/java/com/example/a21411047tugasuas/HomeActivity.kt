@@ -9,6 +9,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.a21411047tugasuas.databinding.ActivityHomeBinding
+import com.example.a21411047tugasuas.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
 
@@ -19,6 +22,9 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var gambar : Array<Int>
     private lateinit var biografi : Array<String>
     private lateinit var listSultan : ArrayList<ItemData>
+
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +37,19 @@ class HomeActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnLogout.setOnClickListener {
+            firebaseAuth.signOut()
+            Intent(this@HomeActivity, MainActivity::class.java).also {
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+            }
         }
 
         gambar = arrayOf(

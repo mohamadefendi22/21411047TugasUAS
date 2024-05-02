@@ -46,40 +46,46 @@
         android:padding="25dp">
 
         <EditText
-            android:id="@+id/EmailRegister"
+            android:id="@+id/emailregister"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
-            android:text="Email"
+            android:hint="Email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
             android:paddingLeft="10dp"
             android:fontFamily="@font/poppinsregular"/>
 
         <EditText
-            android:id="@+id/PasswordEmail"
+            android:id="@+id/passwordreg"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
-            android:text="Kata Sandi"
+            android:hint="Kata Sandi"
+            android:ems="10"
+            android:inputType="textPassword"
             android:paddingLeft="10dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"/>
 
         <EditText
-            android:id="@+id/ConfirmRegister"
+            android:id="@+id/confirmregister"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
             android:backgroundTint="@color/white"
-            android:text="Ulang Kata Sandi"
+            android:hint="Ulang Kata Sandi"
+            android:ems="10"
+            android:inputType="textPassword"
             android:paddingLeft="10dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_Register"
+        android:id="@+id/btn_register"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
@@ -99,7 +105,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/btn_Register">
+        android:layout_below="@id/btn_register">
 
         <TextView
             android:layout_width="wrap_content"
